@@ -1,0 +1,82 @@
+:root {
+  --text-color: #212121;
+  --paragraph-color: #757575;
+  --accent-color: #2196f3;
+  --logo-header-color: #000000;
+  --logo-footer-color: #ffffff;
+  --hero-footer-color: #2f303a;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: var(--text-color);
+}
+
+/* first section */
+.logo {
+  color: var(--logo-header-color);
+}
+
+.logo-word {
+  color: var(--accent-color);
+}
+
+/* navigation */
+.site-nav .link {
+  color: var(--text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+.footer-nav .link {
+  color: var(--logo-footer-color);
+}
+
+.footer-nav .link:hover,
+.footer-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* communication */
+.communication .link {
+  color: var(--text-color);
+}
+
+.communication .link:hover {
+  color: var(--accent-color);
+}
+
+/* second section */
+.hero {
+  background-color: var(--hero-footer-color);
+}
+
+.hero-title {
+  color: var(--logo-footer-color);
+}
+
+/* cursor */
+.pointer {
+  cursor: pointer;
+}
+
+/* last one */
+.last-page {
+  background-color: var(--logo-header-color);
+}
+
+.logo-footer {
+  color: var(--logo-footer-color);
+}
+
+/* for all */
+.list {
+  list-style: none;
+}
+
+.section p {
+  color: var(--paragraph-color);
+}
