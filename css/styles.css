@@ -114,31 +114,27 @@ button {
   background-color: var(--accent-color);
 
   font-family: inherit;
-  letter-spacing: inherit;
-}
-
-.hero .pointer {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
   letter-spacing: 0.06em;
-}
 
-/* cursor */
-.pointer {
   cursor: pointer;
 }
 
 /* second section for second page */
-
-.filter .pointer {
+.filter button {
   background-color: var(--bcg-color-button);
   color: var(--text-color);
 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
+  letter-spacing: inherit;
 }
 
-.filter .pointer:hover,
-.filter .pointer:focus {
+.filter button:hover,
+.filter button:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
