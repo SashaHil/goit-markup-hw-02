@@ -31,10 +31,6 @@ body {
   color: var(--accent-color);
 }
 
-.logo:hover {
-  color: var(--accent-color);
-}
-
 /* navigation */
 .site-nav .link,
 .communication .link {
@@ -167,10 +163,6 @@ button {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
-}
-
-.logo-footer:hover {
-  color: var(--accent-color);
 }
 
 .footer-nav .link {
