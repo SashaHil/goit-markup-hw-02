@@ -153,6 +153,17 @@ button:focus {
   line-height: 1.9;
 }
 
+.works .link {
+  color: #212121;
+
+  text-decoration: none;
+}
+
+.works .link:hover,
+.works .link:focus {
+  color: #2196f3;
+}
+
 /* last one */
 .last-page {
   background-color: var(--hero-footer-color);
