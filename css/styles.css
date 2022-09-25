@@ -106,8 +106,8 @@ body {
 
 /* click */
 button {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
+  background-color: var(--bcg-color-button);
+  color: var(--text-color);
 
   font-family: inherit;
   font-weight: 700;
@@ -116,6 +116,12 @@ button {
   letter-spacing: 0.06em;
 
   cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
 }
 
 /* second section for second page */
