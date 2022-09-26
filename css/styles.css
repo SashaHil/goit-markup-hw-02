@@ -7,6 +7,7 @@
   --hero-footer-color: #2f303a;
   --bcg-color-button: #f5f4fa;
   --main-font-family: "Roboto", sans-serif;
+  --main-font-size: 16px;
 }
 
 /* for all */
@@ -15,7 +16,6 @@ body {
   color: var(--text-color);
 
   font-family: var(--main-font-family);
-  letter-spacing: 0.03em;
 }
 
 .list {
@@ -48,6 +48,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  letter-spacing: 0.03em;
   text-decoration: none;
 }
 
@@ -61,7 +62,7 @@ body {
   color: var(--text-color);
 
   font-weight: 500;
-  font-size: 14px;
+  font-size: var(--main-font-size);
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -85,7 +86,6 @@ body {
 /* second section */
 .hero {
   background-color: var(--hero-footer-color);
-  text-transform: uppercase;
 }
 
 .hero-title {
@@ -95,35 +95,41 @@ body {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 
 .benefits-title .title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
 .benefits-title p {
   font-size: 14px;
   line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 
 .team .title {
   font-weight: 500;
-  font-size: 16px;
+  font-size: var(--main-font-size);
   line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 .team p {
-  font-size: 16px;
+  font-size: var(--main-font-size);
   line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 /* click */
@@ -133,7 +139,7 @@ body {
 
   font-family: inherit;
   font-weight: 700;
-  font-size: 16px;
+  font-size: var(--main-font-size);
   line-height: 1.9;
   letter-spacing: 0.06em;
 
@@ -152,9 +158,9 @@ button:focus {
   color: var(--text-color);
 
   font-weight: 500;
-  font-size: 16px;
+  font-size: var(--main-font-size);
   line-height: 1.63;
-  letter-spacing: inherit;
+  letter-spacing: 0.03em;
 }
 
 .filter .button:hover,
@@ -171,12 +177,13 @@ button:focus {
 }
 
 .works p {
-  font-size: 16px;
+  font-size: var(--main-font-size);
   line-height: 1.9;
+  letter-spacing: 0.03em;
 }
 
 .works .link {
-  color: #212121;
+  color: var(--text-color);
 
   text-decoration: none;
 }
@@ -192,6 +199,7 @@ button:focus {
 
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
 }
 
 .logo-footer {
@@ -213,6 +221,10 @@ button:focus {
 .footer-nav .link:hover,
 .footer-nav .link:focus {
   color: var(--accent-color);
+}
+
+.address {
+  font-style: normal;
 }
 
 .address .link {
