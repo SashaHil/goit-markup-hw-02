@@ -6,21 +6,45 @@
   --primary-white-color: #ffffff;
   --hero-footer-color: #2f303a;
   --bcg-color-button: #f5f4fa;
+  --main-font-family: "Roboto", sans-serif;
 }
 
+/* for all */
 body {
-  background-color: #f5f5f5;
+  background-color: var(--primary-white-color);
   color: var(--text-color);
 
-  font-family: Roboto, sans-serif;
+  font-family: var(--main-font-family);
   letter-spacing: 0.03em;
+}
+
+.list {
+  list-style: none;
+}
+
+.section p {
+  color: var(--paragraph-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /* first section */
 .logo {
   color: var(--logo-header-color);
 
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -70,7 +94,6 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
 }
 
@@ -78,7 +101,6 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
 }
 
 .benefits-title .title {
@@ -105,7 +127,7 @@ body {
 }
 
 /* click */
-button {
+.button {
   background-color: var(--bcg-color-button);
   color: var(--text-color);
 
@@ -125,7 +147,7 @@ button:focus {
 }
 
 /* second section for second page */
-.filter button {
+.filter .button {
   background-color: var(--bcg-color-button);
   color: var(--text-color);
 
@@ -135,8 +157,8 @@ button:focus {
   letter-spacing: inherit;
 }
 
-.filter button:hover,
-.filter button:focus {
+.filter .button:hover,
+.filter .button:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 }
@@ -175,7 +197,7 @@ button:focus {
 .logo-footer {
   color: var(--primary-white-color);
 
-  font-family: Raleway, sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -202,13 +224,4 @@ button:focus {
 .address .link:hover,
 .address .link:focus {
   color: var(--accent-color);
-}
-
-/* for all */
-.list {
-  list-style: none;
-}
-
-.section p {
-  color: var(--paragraph-color);
 }
