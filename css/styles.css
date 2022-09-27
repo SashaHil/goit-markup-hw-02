@@ -1,6 +1,6 @@
 :root {
   --text-color: #212121;
-  --paragraph-color: #757575;
+  --p-tel-mail-color: #757575;
   --accent-color: #2196f3;
   --logo-header-color: #000000;
   --primary-white-color: #ffffff;
@@ -20,10 +20,6 @@ body {
 
 .list {
   list-style: none;
-}
-
-.section p {
-  color: var(--paragraph-color);
 }
 
 .visually-hidden {
@@ -57,12 +53,11 @@ body {
 }
 
 /* navigation */
-.site-nav .link,
-.communication .link {
+.site-nav .link {
   color: var(--text-color);
 
   font-weight: 500;
-  font-size: var(--main-font-size);
+  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -78,6 +73,16 @@ body {
 }
 
 /* communication */
+.communication .link {
+  color: var(--p-tel-mail-color);
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
 .communication .link:hover,
 .communication .link:focus {
   color: var(--accent-color);
@@ -116,6 +121,8 @@ body {
 }
 
 .benefits-title p {
+  color: var(--p-tel-mail-color);
+
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.03em;
@@ -129,13 +136,15 @@ body {
 }
 
 .team p {
+  color: var(--p-tel-mail-color);
+
   font-size: var(--main-font-size);
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
 
 /* click */
-.button {
+.btn {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
 
@@ -143,19 +152,20 @@ body {
   font-weight: 700;
   font-size: var(--main-font-size);
   line-height: 1.9;
+  text-align: center;
   letter-spacing: 0.06em;
 
   cursor: pointer;
 }
 
-.button:hover,
-.button:focus {
+.btn:hover,
+.btn:focus {
   background-color: #188ce8;
   color: var(--primary-white-color);
 }
 
 /* second section for second page */
-.filter .button {
+.filter .btn {
   background-color: var(--bcg-color-button);
   color: var(--text-color);
 
@@ -165,9 +175,11 @@ body {
   letter-spacing: 0.03em;
 }
 
-.filter .button:hover,
-.filter .button:focus {
+.filter .btn:hover,
+.filter .btn:focus {
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   color: var(--primary-white-color);
 }
 
@@ -179,6 +191,8 @@ body {
 }
 
 .works p {
+  color: var(--p-tel-mail-color);
+
   font-size: var(--main-font-size);
   line-height: 1.9;
   letter-spacing: 0.03em;
@@ -214,17 +228,6 @@ body {
   text-decoration: none;
 }
 
-.footer-nav .link {
-  color: var(--primary-white-color);
-
-  text-decoration: none;
-}
-
-.footer-nav .link:hover,
-.footer-nav .link:focus {
-  color: var(--accent-color);
-}
-
 .address {
   font-style: normal;
 }
@@ -237,5 +240,16 @@ body {
 
 .address .link:hover,
 .address .link:focus {
+  color: var(--accent-color);
+}
+
+.footer-address .link {
+  color: var(--primary-white-color);
+
+  text-decoration: none;
+}
+
+.footer-address .link:hover,
+.footer-addres .link:focus {
   color: var(--accent-color);
 }
