@@ -95,6 +95,7 @@ body {
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
 }
 
@@ -102,6 +103,7 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  text-align: center;
   letter-spacing: 0.03em;
 }
 
@@ -134,8 +136,8 @@ body {
 
 /* click */
 .button {
-  background-color: var(--bcg-color-button);
-  color: var(--text-color);
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
 
   font-family: inherit;
   font-weight: 700;
@@ -148,7 +150,7 @@ body {
 
 button:hover,
 button:focus {
-  background-color: var(--accent-color);
+  background-color: #188ce8;
   color: var(--primary-white-color);
 }
 
@@ -190,7 +192,7 @@ button:focus {
 
 .works .link:hover,
 .works .link:focus {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* last one */
